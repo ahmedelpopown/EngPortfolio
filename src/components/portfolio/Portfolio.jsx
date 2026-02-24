@@ -13,15 +13,13 @@ const items = [
 
 const ListItem = ({ item }) => {
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+const [isMobile, setIsMobile] = useState(false);
 
 useEffect(() => {
-  const handleResize = () => {
-    setIsMobile(window.innerWidth < 1024);
-  };
-
-  window.addEventListener("resize", handleResize);
-  return () => window.removeEventListener("resize", handleResize);
+  const check = () => setIsMobile(window.innerWidth < 1024);
+  check();
+  window.addEventListener("resize", check);
+  return () => window.removeEventListener("resize", check);
 }, []);
 
 
@@ -119,11 +117,22 @@ const Portfolio = () => {
 
   const { scrollYProgress } = useScroll({ target: ref });
 
-  const xTranslate = useTransform(
-    scrollYProgress,
-    [0, 1],
-    [0, -window.innerWidth * items.length]
-  );
+const [screenWidth, setScreenWidth] = useState(0);
+
+useEffect(() => {
+  const updateWidth = () => setScreenWidth(window.innerWidth);
+
+  updateWidth();
+  window.addEventListener("resize", updateWidth);
+
+  return () => window.removeEventListener("resize", updateWidth);
+}, []);
+
+const xTranslate = useTransform(
+  scrollYProgress,
+  [0, 1],
+  [0, -screenWidth * items.length]
+);
 
   return (
     <div className="portfolio" ref={ref}>

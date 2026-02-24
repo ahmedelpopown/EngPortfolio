@@ -12,7 +12,10 @@
   align-items: center;
   justify-content: center;
 }
-
+.cSection form {
+  width: 100%;
+ 
+}
 .cSection:last-child {
   background-color: rgba(2, 2, 45, 0.187);
   margin: 50px 0px;
@@ -20,7 +23,7 @@
   border-radius: 50% 0px;
 }
 
-form {
+.contact form  {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -57,7 +60,7 @@ label {
 }
 
 @media (max-width: 1280px) {
-  .form {
+  form {
     width: 100%;
   }
 }
@@ -76,13 +79,14 @@ label {
   .cSection {
     width: 100%;
   }
-  .cSection form {
-    width: 100%;
-    padding: 0px;
-  }
+.cSection form {
+  width: 100%;
+  padding: 0;
+ 
+}
 
   .cSection:first-child {
-    height: 70%;
+    height: 100%;
   }
   .cSection:last-child {
     height: 30%;

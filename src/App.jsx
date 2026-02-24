@@ -72,10 +72,10 @@ useEffect(() => {
           </LazyLoad>
         </Suspense>
 
-        <ScrollToTop
+        {/* <ScrollToTop
           smooth
           className="fixed z-50 p-4 transition-all duration-300 border-none rounded-full shadow-2xl bg-[bisque] bottom-8 left-8 backdrop-blur-lg bg-white/10 hover:bg-white/25 active:scale-90"
-        />
+        /> */}
       </div>
     </>
   );
