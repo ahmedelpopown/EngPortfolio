@@ -5,7 +5,7 @@ import { motion, useInView, useScroll, useTransform } from "motion/react";
 
 const items = [
   { id: 1, img: "/p1.jpg", title: "backend Food Aplication", desc: "Lorem ipsum dolor sit amet." ,link:"https://foodify.pt-po.com/home" },
-  { id: 2, img: "/p2.jpg", title: "School Management System", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
+  { id: 2, img: "/p2.jpg", title: "School Management System", desc: "Lorem ipsum dolor sit amet.",link:"https://cms/public" },
   { id: 3, img: "/p3.jpg", title: "Real-time Chat Application", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
   { id: 4, img: "/p4.jpg", title: "Social Media Project", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
   { id: 5, img: "/p5.jpg", title: "Animated Portfolio Website", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
