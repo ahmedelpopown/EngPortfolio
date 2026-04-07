@@ -4,11 +4,11 @@ import { motion, useInView, useScroll, useTransform } from "motion/react";
 
 
 const items = [
-  { id: 1, img: "/p1.jpg", title: "Full Stack Blog Application", desc: "Lorem ipsum dolor sit amet." },
-  { id: 2, img: "/p2.jpg", title: "School Management System", desc: "Lorem ipsum dolor sit amet." },
-  { id: 3, img: "/p3.jpg", title: "Real-time Chat Application", desc: "Lorem ipsum dolor sit amet." },
-  { id: 4, img: "/p4.jpg", title: "Social Media Project", desc: "Lorem ipsum dolor sit amet." },
-  { id: 5, img: "/p5.jpg", title: "Animated Portfolio Website", desc: "Lorem ipsum dolor sit amet." },
+  { id: 1, img: "/p1.jpg", title: "backend Food Aplication", desc: "Lorem ipsum dolor sit amet." ,link:"https://foodify.pt-po.com/home" },
+  { id: 2, img: "/p2.jpg", title: "School Management System", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
+  { id: 3, img: "/p3.jpg", title: "Real-time Chat Application", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
+  { id: 4, img: "/p4.jpg", title: "Social Media Project", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
+  { id: 5, img: "/p5.jpg", title: "Animated Portfolio Website", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
 ];
 
 const ListItem = ({ item }) => {
@@ -79,7 +79,7 @@ const textVariants = {
         <motion.h1 variants={textVariants}>{item.title}</motion.h1>
         <motion.p variants={textVariants}>{item.desc}</motion.p>
         <motion.a variants={textVariants} href={item.link}>
-          <button>View Project</button>
+         View Project
         </motion.a>
       </motion.div>
     </div>
