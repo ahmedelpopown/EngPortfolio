@@ -2,13 +2,42 @@ import { useEffect, useRef, useState } from "react";
 import "./portfolio.css";
 import { motion, useInView, useScroll, useTransform } from "motion/react";
 
-
 const items = [
-  { id: 1, img: "/p1.jpg", title: "backend Food Aplication", desc: "Lorem ipsum dolor sit amet." ,link:"https://foodify.pt-po.com/home" },
-  { id: 2, img: "/p2.jpg", title: "Cms mangment System", desc: "Lorem ipsum dolor sit amet.",link:"https://cms/public" },
-  { id: 3, img: "/p3.jpg", title: "Real-time Chat Application", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
-  { id: 4, img: "/p4.jpg", title: "Social Media Project", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
-  { id: 5, img: "/p5.jpg", title: "Animated Portfolio Website", desc: "Lorem ipsum dolor sit amet.",link:"https://foodify.pt-po.com/home" },
+  {
+    id: 1,
+    img: "/foodify.png",
+    title: "Foodify - Food Ordering System",
+    desc: "Laravel-based food ordering platform with cart management, discounts, and PayPal payment integration.",
+    link: "https://foodify.pt-po.com/home",
+  },
+  {
+    id: 2,
+    img: "/cms.png",
+    title: "CMS - Content Management System",
+    desc: "A content management system for managing website content through an organized dashboard.",
+    link: "https://cms.pt-po.com",
+  },
+  {
+    id: 3,
+    img: "/helpdisk.png",
+    title: "HelpDesk Lite - Real-Time Chat",
+    desc: "A real-time communication application designed to support conversations and customer assistance.",
+    link: "https://helpdisklite.pt-po.com",
+  },
+  {
+    id: 4,
+    img: "/jackson.png",
+    title: "Jackson - Social Media Platform",
+    desc: "A social media project focused on user interaction and connecting people through a shared platform.",
+    link: "https://jacson.pt-po.com",
+  },
+  {
+    id: 5,
+    img: "/pos.png",
+    title: "Point of Sales System",
+    desc: "A point-of-sale system for managing sales operations and simplifying daily business workflows.",
+    link: "https://point-of-sales.pt-po.com",
+  },
 ];
 
 const ListItem = ({ item }) => {
